@@ -17,18 +17,18 @@ const buttonClass = computed(() => {
     return props.buttonType === "blue"
       ? "bg-[#009fc2] text-white border-none"
       : props.buttonType === "black"
-      ? "bg-black text-white border-none"
-      : props.buttonType === "red"
-      ? "bg-red-500 text-white border-none"
-      : "";
+        ? "bg-black text-white border-none"
+        : props.buttonType === "red"
+          ? "bg-red-500 text-white border-none"
+          : "";
   } else {
     return props.buttonType === "blue"
       ? "bg-white text-[#009fc2] border-2 border-[#009fc2]"
       : props.buttonType === "black"
-      ? "bg-white text-black border-2 border-black"
-      : props.buttonType === "red"
-      ? "bg-white text-red-500 border-2 border-red"
-      : "";
+        ? "bg-white text-black border-2 border-black"
+        : props.buttonType === "red"
+          ? "bg-white text-red-500 border-2 border-red"
+          : "";
   }
 });
 
@@ -40,12 +40,7 @@ const handleClick = () => {
 </script>
 
 <template>
-  <button
-    v-if="shouldShowButton"
-    @click="handleClick"
-    :class="buttonClass"
-    type="button"
-  >
+  <button v-if="shouldShowButton" @click="handleClick" :class="buttonClass" type="button">
     <span>{{ buttonLabel }}</span>
   </button>
 

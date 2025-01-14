@@ -11,32 +11,16 @@ const onButtonClick = (buttonType) => {
 <template>
   <div class="button-container">
     <div class="bg-blue-500 text-white p-4">
-    Hello, Tailwind CSS!
-  </div>
-    <Button
-      :buttonLabel="'Active blue'"
-      :isActive="buttonStore.isActiveButtonBlue"
-      :buttonType="'blue'"
-      :clickHandler="() => onButtonClick('blue')"  
-    />
-    <Button
-      :buttonLabel="'Inactive blue'"
-      :isActive="!buttonStore.isActiveButtonBlue"
-      :buttonType="'blue'"
-      :clickHandler="() => onButtonClick('blue')"  
-    />
-    <Button
-      :buttonLabel="'Active black'"
-      :isActive="buttonStore.isActiveButtonBlack"
-      :buttonType="'black'"
-      :clickHandler="() => onButtonClick('black')"
-    />
-    <Button
-      :buttonLabel="'Inactive black'"
-      :isActive="!buttonStore.isActiveButtonBlack"
-      :buttonType="'black'"
-      :clickHandler="() => onButtonClick('black')"
-    />
+      Hello, Tailwind CSS!
+    </div>
+    <Button :buttonLabel="'Active blue'" :isActive="buttonStore.isActiveButtonBlue" :buttonType="'blue'"
+      :clickHandler="() => onButtonClick('blue')" />
+    <Button :buttonLabel="'Inactive blue'" :isActive="!buttonStore.isActiveButtonBlue" :buttonType="'blue'"
+      :clickHandler="() => onButtonClick('blue')" />
+    <Button :buttonLabel="'Active black'" :isActive="buttonStore.isActiveButtonBlack" :buttonType="'black'"
+      :clickHandler="() => onButtonClick('black')" />
+    <Button :buttonLabel="'Inactive black'" :isActive="!buttonStore.isActiveButtonBlack" :buttonType="'black'"
+      :clickHandler="() => onButtonClick('black')" />
   </div>
 </template>
 
